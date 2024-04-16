@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home Sweet Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Sweet Home</title>
 </head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-      font-size: 2em;
-    }
-  </style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2em;
+  }
+</style>
+
 <body>
+  <h1>Oi Re</h1>
   <div id="clock"></div>
 
 </body>
 <script>
-    function updateTime() {
-      var now = new Date();
-      var hours = now.getHours();
-      var minutes = now.getMinutes();
-      var seconds = now.getSeconds();
-      var timeString = hours.toString().padStart(2, '0') + ":" +
-                       minutes.toString().padStart(2, '0') + ":" +
-                       seconds.toString().padStart(2, '0');
-      document.getElementById('clock').textContent = timeString;
-    }
+  function updateTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    var timeString = hours.toString().padStart(2, '0') + ":" +
+      minutes.toString().padStart(2, '0') + ":" +
+      seconds.toString().padStart(2, '0');
+    document.getElementById('clock').textContent = timeString;
+  }
 
-    updateTime(); // Call the function immediately to avoid delay in displaying the time
+  updateTime(); // Call the function immediately to avoid delay in displaying the time
 
-    // Update time every second
-    setInterval(updateTime, 1000);
-  </script>
+  // Update time every second
+  setInterval(updateTime, 1000);
+</script>
+
 </html>
