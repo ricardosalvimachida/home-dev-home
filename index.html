@@ -1,41 +1,128 @@
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<!-- 
+THEME: Phantom - Bootstrap Portfolio Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/phantom-best-bootstrap-portfolio-template/
+DEMO: https://demo.themefisher.com/phantom/
+GITHUB: https://github.com/themefisher/Phantom-Bootstrap-Portfolio-Template
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Sweet Home</title>
-</head>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 100px;
-    font-size: 2em;
-  }
-</style>
 
-<body>
-  <h1>Oi Rames</h1>
-  <div id="clock"></div>
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>Home - Ricardo Salvi Machida</title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Portfolio HTML Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Html5 Portfolio Template v1.0">
+
+  <!-- Essential Stylesheets -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/animate.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/themefisher-fonts/css/themefisher-fonts.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Theme Stylesheet -->
+  <link rel="stylesheet" href="#" id="color-changer">
+
+  <!--Favicon-->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body><!-- set class="dark" on body tag for DARK-THEME -->
+
+  <div class="preloader">
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+  </div>
+
+  <main class="site-wrapper">
+    <div class="pt-table">
+      <div class="pt-tablecell page-welcome relative">
+        <!-- .close -->
+        <span class="page-close"><i class="tf-ion-close"></i></span>
+        <!-- /.close -->
+
+        <div class="author-image-large">
+          <img src="images/author.png" alt="">
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-7">
+              <div class="page-title">
+                <h2>Ricardo <span class="primary"> SAlvi</span> <span class="title-bg">About</span></h2>
+                <p>Software Engineer / Back-end Developer with over ten years of solid programming experience,
+                  specializing in technologies such as C#, SQL, Python, ASP.Net, and AWS.</p>
+                <p>In addition to programming, I possess strong communication, leadership, and teamwork skills, enabling
+                  me to collaborate effectively with business, design, and quality teams to ensure project success.
+                  Passionate about the web and emerging technologies, I am constantly striving to stay updated and learn
+                  new tools and methodologies. I hold a degree in Mathematics from USP and a Scrum Fundamentals
+                  certification.
+                  Open to challenging opportunities and collaborations that allow me to apply and expand my knowledge in
+                  software development while fostering professional growth.</p>
+              </div>
+            </div>
+          </div> <!-- /.row -->
+        </div> <!-- /.container -->
+
+        <nav class="page-nav clear">
+          <div class="container">
+            <div class="flex flex-middle space-between">
+              <span class="prev-page">&larr;</span>
+              <span class="copyright">r.salvi10@gmail.com - (11) 980505619</span>
+              <span class="next-page">&rarr;</span>
+            </div>
+          </div>
+          <!-- /.page-nav -->
+        </nav>
+        <!-- /.container -->
+
+      </div> <!-- /.pt-tablecell -->
+    </div> <!-- /.pt-table -->
+  </main> <!-- /.site-wrapper -->
+
+
+  <!-- 
+Essential Scripts
+=====================================-->
+  <script src="plugins/jquery-2.2.4.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/jquery.nicescroll.min.js"></script>
+  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+
+  <script src="js/script.js"></script>
 
 </body>
-<script>
-  function updateTime() {
-    var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
-    var timeString = hours.toString().padStart(2, '0') + ":" +
-      minutes.toString().padStart(2, '0') + ":" +
-      seconds.toString().padStart(2, '0');
-    document.getElementById('clock').textContent = timeString;
-  }
-
-  updateTime(); // Call the function immediately to avoid delay in displaying the time
-
-  // Update time every second
-  setInterval(updateTime, 1000);
-</script>
 
 </html>
